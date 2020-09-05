@@ -18,3 +18,15 @@ for (item of btn) {
 function backspc() {
     screen.value = screen.value.substr(0, screen.value.length - 1);
 }
+
+function sin() {
+    screen.value = Math.sin(screen.value);
+}
+
+function cos() {
+    screen.value = Math.cos(screen.value);
+}
+
+function tan() {
+    screen.value = Math.tan(screen.value);
+}
