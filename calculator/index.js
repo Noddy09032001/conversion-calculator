@@ -1,10 +1,15 @@
 var screen = document.querySelector('#screen');
 var btn = document.querySelectorAll('.btn');
 
+window.onload = function () {
+    screen = document.querySelector('#screen');
+};
+
 // getting the value of the buttons when they are clicked
 for (item of btn) {
     item.addEventListener('click', (e) => {
         btntext = e.target.innerText;
+        console.log('Button clicked:', btntext);
         if (btntext == '×') {
             btntext = '*';
         }
